@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* global css start here ---------------------  */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: #6b7c93;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: #47495a;
+}
+a{
+  text-decoration: none;
+  color: #155184;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.sub-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #47495a;
+}
+.title-text {
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+.bg-gradients {
+  background-image: linear-gradient(-180deg, #def5e17a 30%, #cddeff30 100%);
+}
+
+/* header css start ----------------  */
+
+#header {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  transition: 0.4s;
+  display: block;
+  transition: top 0.3s;
+  box-shadow: 0 0 30px 0 rgb(32 39 48 / 8%);
+}
+#header.fixed-top {
+  top: 0;
+  opacity: 0.95;
+}
+
+.navbar-brand img {
+  width: 23rem;
+}
+/* header css end here -------------  */
+
+/* banner css start here ----------------  */
+.banner-section {
+  margin-top: 6.5rem;
+  background: transparent linear-gradient(90deg, #155184, #3799d4) 0 0;
+}
+.banner-section h1 {
+  color: #fff;
+}
+.banner-section h1 .wrap {
+  color: #a5ca44;
+}
+.banner-section p {
+  color: #fff;
+}
+.banner-form {
+  max-width: 40rem;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 3rem;
+  box-shadow: 3px 5px 22px 0px rgb(72 73 121 / 15%);
+  border-radius: 1.4rem;
+  background: white;
+}
+
+.banner-section h1 .title-text {
+  font-size: 1.8rem;
+}
+.banner-form h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #155184;
+}
+
+/* brand section start ----------------  */
+.brands .brand-list {
+  display: flex;
+  justify-content: space-between;
+ align-items: center;
+
+}.brands 
+.brand-list img {
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  filter: grayscale(100);
+}
+.brands 
+.brand-list img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+/* brand section start ----------------  */
+
+/* features css start ------------------  */
+
+#features .feature-card {
+  padding: 3rem;
+  background: #fff;
+  border-radius: 0.6rem;
+  -webkit-box-shadow: 0 4px 9px 0 rgb(23 28 33 / 6%);
+  box-shadow: 0 4px 9px 0 rgb(23 28 33 / 6%);
+  border: 1px solid #ececec;
+  display: flex;
+}
+
+.secsmallbg-1 {
+  background: url(../images/bg-small1.png) no-repeat #fff !important;
+}
+.secsmallbg-2 {
+  background: url(../images/bg-small2.png) no-repeat #fff !important;
+}
+.secsmallbg-3 {
+  background: url(../images/bg-small3.png) no-repeat #fff !important;
+}
+.secsmallbg-4 {
+  background: url(../images/bg-small4.png) no-repeat #fff !important;
+}
+.feature-card h5 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.8rem;
+}
+#features .feature-card .box-icon {
+  font-size: 3rem;
+  color: #47495a;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+.feature-card p {
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+#features .feature-card .read-more {
+  display: inline-block;
+  /* align-items: center; */
+  text-decoration: none;
+  margin-top: 1rem;
+  color: #155184;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* customer slider css ---------  */
+
+.slick-slide.slick-cloned,
+.slick-slide.slick-active,
+.slick-slide {
+  transform: scale(0.91);
+  opacity: 0.5;
+  margin: 2rem 0;
+  outline: none;
+}
+.slick-slide.slick-current.slick-center {
+  transform: scale(1);
+  opacity: 1;
+}
+.customer-card {
+  background: #fff;
+  border: 1px solid #eceff1;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  border-radius: 0.6rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.slick-arrow {
+  display: inline-flex;
+  width: 5rem;
+  box-shadow: 0 2px 9px rgb(112 110 110 / 18%);
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  background-color: white;
+}
+
+span.prev-arrow.slick-arrow {
+  left: 20%;
+}
+span.next-arrow.slick-arrow {
+  right: 20%;
+}
+.customer-card figure.image {
+  margin-right: 4rem;
+}
+.customer-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.customer-card small {
+  display: block;
+  font-weight: bold;
+  color: #47495a;
+}
+.customer-card small span {
+  display: block;
+  font-weight: 400;
+  color: #6b7c93;
+}
+
+.resources .articles {
+  -ms-grid-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-gap: 2rem;
+}
+.resources .articles .big {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+.resources .articles .big article {
+  display: flex;
+  background: white;
+  height: 100%;
+  border: 1px solid #ececec;
+  box-shadow: 0 4px 5px 0 rgb(23 28 33 / 6%);
+  border-radius: 0.6rem;
+  box-sizing: border-box;
+  padding:  2.5rem;
+}
+.resources .articles .big article {
+  display: flex;
+}
+.resources .articles .big article  .image img {
+  width: 200px;
+}
+.resources .short-artical article {
+  height: 100%;
+  border: 1px solid #ececec;
+  box-shadow: 0 4px 5px 0 rgb(23 28 33 / 6%);
+  border-radius: 0.6rem;
+  box-sizing: border-box;
+  padding: 2.5rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-content: end;
+  justify-content: space-between;
+}
+.resources h3 {
+  font-size: 17px;
+  line-height: 1.4;
+}
+section.cta-section {
+  background: transparent linear-gradient(
+    270deg
+    , #155184, #3799d4) 0 0;
+}
+
+/* footer top css   */
+.footer-logo{
+  width: 200px;
+}
+.footer-top p, .footer-top {
+  font-size: 14px;
+}
+.footer-top .footer-links li a {
+  font-size: 1.4rem;
+  display: block;
+  margin: 1rem 0;
+  color: inherit;
+  text-decoration: none;
+}
+.footer-top .blog-post {
+  box-shadow: 0 4px 9px 0 rgb(23 28 33 / 6%);
+  border: 1px solid #ececec;
+  border-radius: .4rem;
+}
+.footer-top .left-img {
+  width: 40%;
+}
+.footer-top .right-content {
+  width: 60%;
+  font-size: 1.4rem;
+}
+.footer-top .right-content  p{
+  font-size: 1.4rem;
+}
+footer {
+  font-size: 1.4rem;
+}
+
+
+
+
+#scroll {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #a5ca44;
+  /* text-indent: -9999px; */
+  /* display: none; */
+  /* -webkit-border-radius: 60px; */
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  font-size: 22px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  display: none;
+  justify-content: center;
+}
+
+#scroll:hover {
+  background-color:#155184;
+}
